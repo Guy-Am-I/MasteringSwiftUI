@@ -9,7 +9,32 @@ import SwiftUI
 
 struct MasteringGrids: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack {
+            Color.red.opacity(0.2).ignoresSafeArea()
+            
+            Grid {
+                GridRow {
+                    Rectangle()
+                        .fill(.yellow)
+                        .clipShape(.rect)
+                    Rectangle()
+                        .fill(.yellow)
+                        .clipShape(.rect)
+                    Rectangle()
+                        .fill(.yellow)
+                        .clipShape(.rect)
+                }
+                GridRow {
+                    Rectangle()
+                        .fill(.red)
+                        .clipShape(.rect)
+                    Rectangle()
+                        .fill(.orange)
+                        .clipShape(.rect)
+                        .gridCellColumns(2)
+                }
+            }.padding()
+        }
     }
 }
 
