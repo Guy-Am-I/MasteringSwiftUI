@@ -16,6 +16,8 @@ struct ContentView: View {
     
     @State private var screenTapped = false
     
+    let rotationAngle = 360.0
+    
     var body: some View {
         ZStack {
             LinearGradient(colors: screenTapped ? colorList1 : colorList2, startPoint: .bottomLeading, endPoint: .topTrailing)
@@ -34,9 +36,15 @@ struct ContentView: View {
                     .fontWeight(.semibold)
                     .foregroundStyle(Color.blue)
             }
+            .rotation3DEffect(
+                .degrees(screenTapped ? 0 : rotationAngle),
+                                      axis: (x: 0.0, y: 1.0, z: 0.0)
+            )
         }
         .onTapGesture {
-            screenTapped.toggle()
+            withAnimation {
+                screenTapped.toggle()
+            }
         }
     }
 }
