@@ -8,22 +8,35 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    let colorList1: [Color] = [.yellow, .red, .white, .orange, .black]
+    var colorList2: [Color] {
+        colorList1.reversed()
+    }
+    
+    @State private var screenTapped = false
+    
     var body: some View {
         ZStack {
-            LinearGradient(colors: [.yellow, .red, .white, .orange, .black], startPoint: .bottomLeading, endPoint: .topTrailing)
+            LinearGradient(colors: screenTapped ? colorList1 : colorList2, startPoint: .bottomLeading, endPoint: .topTrailing)
                 .ignoresSafeArea()
-            Text("MasteringSwiftUI")
-                .font(.largeTitle)
-                .fontWeight(.semibold)
-                .foregroundStyle(Color.red)
-            Text("MasteringSwiftUI")
-                .font(.largeTitle)
-                .fontWeight(.semibold)
-                .foregroundStyle(Color.green)
-            Text("MasteringSwiftUI")
-                .font(.largeTitle)
-                .fontWeight(.semibold)
-                .foregroundStyle(Color.blue)
+            VStack {
+                Text("MasteringSwiftUI")
+                    .font(.largeTitle)
+                    .fontWeight(.semibold)
+                    .foregroundStyle(Color.red)
+                Text("MasteringSwiftUI")
+                    .font(.largeTitle)
+                    .fontWeight(.semibold)
+                    .foregroundStyle(Color.green)
+                Text("MasteringSwiftUI")
+                    .font(.largeTitle)
+                    .fontWeight(.semibold)
+                    .foregroundStyle(Color.blue)
+            }
+        }
+        .onTapGesture {
+            screenTapped.toggle()
         }
     }
 }
