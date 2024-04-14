@@ -13,6 +13,7 @@
 		780D99D02BCC830F001BCDB2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 780D99CF2BCC830F001BCDB2 /* Preview Assets.xcassets */; };
 		780D99D72BCC8874001BCDB2 /* FontAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780D99D62BCC8874001BCDB2 /* FontAnimation.swift */; };
 		780D99D92BCC8A27001BCDB2 /* MasteringGrids.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780D99D82BCC8A27001BCDB2 /* MasteringGrids.swift */; };
+		780D99DB2BCC8C00001BCDB2 /* MasteringNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780D99DA2BCC8C00001BCDB2 /* MasteringNavigation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		780D99CF2BCC830F001BCDB2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		780D99D62BCC8874001BCDB2 /* FontAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontAnimation.swift; sourceTree = "<group>"; };
 		780D99D82BCC8A27001BCDB2 /* MasteringGrids.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasteringGrids.swift; sourceTree = "<group>"; };
+		780D99DA2BCC8C00001BCDB2 /* MasteringNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasteringNavigation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 			children = (
 				780D99C82BCC830D001BCDB2 /* MasteringSwiftUIApp.swift */,
 				780D99CA2BCC830D001BCDB2 /* ContentView.swift */,
+				780D99DA2BCC8C00001BCDB2 /* MasteringNavigation.swift */,
 				780D99D82BCC8A27001BCDB2 /* MasteringGrids.swift */,
 				780D99D62BCC8874001BCDB2 /* FontAnimation.swift */,
 				780D99CC2BCC830F001BCDB2 /* Assets.xcassets */,
@@ -146,6 +149,7 @@
 				780D99D72BCC8874001BCDB2 /* FontAnimation.swift in Sources */,
 				780D99CB2BCC830D001BCDB2 /* ContentView.swift in Sources */,
 				780D99D92BCC8A27001BCDB2 /* MasteringGrids.swift in Sources */,
+				780D99DB2BCC8C00001BCDB2 /* MasteringNavigation.swift in Sources */,
 				780D99C92BCC830D001BCDB2 /* MasteringSwiftUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

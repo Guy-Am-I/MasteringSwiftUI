@@ -52,12 +52,18 @@ struct ContentView: View {
                         Image(systemName: "gym.bag")
                     })
                 }
+                ToolbarItem(placement: .principal) {
+                    NavigationLink(destination: MasteringNavigation(), label: {
+                        Image(systemName: "arrow.clockwise.circle")
+                    })
+                }
                 ToolbarItem(placement: .topBarTrailing) {
                     NavigationLink(destination: MasteringGrids(), label : {
                         Image(systemName: "dot.scope.display")
                     })
                 }
             }
+            .navigationBarTitleDisplayMode(.inline)
             .onTapGesture {
                 withAnimation {
                     screenTapped.toggle()
