@@ -19,31 +19,49 @@ struct ContentView: View {
     let rotationAngle = 360.0
     
     var body: some View {
-        ZStack {
-            LinearGradient(colors: screenTapped ? colorList1 : colorList2, startPoint: .bottomLeading, endPoint: .topTrailing)
-                .ignoresSafeArea()
-            VStack {
-                Text("MasteringSwiftUI")
-                    .font(.largeTitle)
-                    .fontWeight(.semibold)
-                    .foregroundStyle(Color.red)
-                Text("MasteringSwiftUI")
-                    .font(.largeTitle)
-                    .fontWeight(.semibold)
-                    .foregroundStyle(Color.green)
-                Text("MasteringSwiftUI")
-                    .font(.largeTitle)
-                    .fontWeight(.semibold)
-                    .foregroundStyle(Color.blue)
+        NavigationStack {
+            ZStack {
+                LinearGradient(colors: screenTapped ? colorList1 : colorList2, startPoint: .bottomLeading, endPoint: .topTrailing)
+                    .ignoresSafeArea()
+                VStack {
+                    Spacer()
+                    Text("MasteringSwiftUI")
+                        .font(.largeTitle)
+                        .fontWeight(.semibold)
+                        .foregroundStyle(Color.red)
+                    Spacer()
+                    Text("MasteringSwiftUI")
+                        .font(.largeTitle)
+                        .fontWeight(.semibold)
+                        .foregroundStyle(Color.green)
+                    Spacer()
+                    Text("MasteringSwiftUI")
+                        .font(.largeTitle)
+                        .fontWeight(.semibold)
+                        .foregroundStyle(Color.blue)
+                    Spacer()
+                }
+                .rotation3DEffect(
+                    .degrees(screenTapped ? 0 : rotationAngle),
+                    axis: (x: 0.0, y: 1.0, z: 0.0)
+                )
             }
-            .rotation3DEffect(
-                .degrees(screenTapped ? 0 : rotationAngle),
-                                      axis: (x: 0.0, y: 1.0, z: 0.0)
-            )
-        }
-        .onTapGesture {
-            withAnimation {
-                screenTapped.toggle()
+            .toolbar {
+                ToolbarItem(placement: .topBarLeading) {
+                    NavigationLink(destination: FontAnimation(), label: {
+                        Image(systemName: "gym.bag")
+                    })
+                }
+                ToolbarItem(placement: .topBarTrailing) {
+                    NavigationLink(destination: MasteringGrids(), label : {
+                        Image(systemName: "dot.scope.display")
+                    })
+                }
+            }
+            .onTapGesture {
+                withAnimation {
+                    screenTapped.toggle()
+                }
             }
         }
     }
