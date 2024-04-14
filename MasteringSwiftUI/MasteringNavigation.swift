@@ -17,15 +17,16 @@ struct MasteringNavigation: View {
                 Color.blue.opacity(0.8).ignoresSafeArea()
                 
                 VStack() {
+                    Spacer()
                     Text("Enter your info")
                         .font(.largeTitle)
                         .fontWeight(.semibold)
-                    Spacer()
                     VStack(alignment: .leading) {
                         Text("Enter your name")
                         TextField("Guy", text: $name)
                         Text("Enter your age")
                         TextField("26", text: $age)
+                            .keyboardType(.numberPad)
                     }.padding()
                     NavigationLink(destination: ProcessView(name: name, age: age), label: {
                         Text("Submit")
@@ -37,6 +38,7 @@ struct MasteringNavigation: View {
                     Spacer()
                 }
             }
+            .navigationTitle("Mastering Navigation")
         }
     }
 }
@@ -54,7 +56,7 @@ struct ProcessView: View {
             Color.black.opacity(0.4).ignoresSafeArea()
             
             if numericalAge == 0 {
-                Text("Invalid Input")
+                Text("Invalid age input of: \(age)")
             } else {
                 Text("Hi there \(name) of age: \(age)")
             }
