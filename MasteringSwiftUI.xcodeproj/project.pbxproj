@@ -18,6 +18,9 @@
 		780D99DF2BCCACE2001BCDB2 /* GradientAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780D99DE2BCCACE2001BCDB2 /* GradientAnimation.swift */; };
 		780D9A2A2BCD6F48001BCDB2 /* Navigationing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780D9A292BCD6F48001BCDB2 /* Navigationing.swift */; };
 		780D9A2C2BCD76FD001BCDB2 /* MasterGrids.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780D9A2B2BCD76FD001BCDB2 /* MasterGrids.swift */; };
+		780D9A2E2BCD7994001BCDB2 /* ImageDrag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780D9A2D2BCD7994001BCDB2 /* ImageDrag.swift */; };
+		780D9A302BCD7A2C001BCDB2 /* ImageConsts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780D9A2F2BCD7A2C001BCDB2 /* ImageConsts.swift */; };
+		780D9A322BCD7B35001BCDB2 /* DraggableImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780D9A312BCD7B35001BCDB2 /* DraggableImageModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +36,9 @@
 		780D99DE2BCCACE2001BCDB2 /* GradientAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientAnimation.swift; sourceTree = "<group>"; };
 		780D9A292BCD6F48001BCDB2 /* Navigationing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigationing.swift; sourceTree = "<group>"; };
 		780D9A2B2BCD76FD001BCDB2 /* MasterGrids.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterGrids.swift; sourceTree = "<group>"; };
+		780D9A2D2BCD7994001BCDB2 /* ImageDrag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDrag.swift; sourceTree = "<group>"; };
+		780D9A2F2BCD7A2C001BCDB2 /* ImageConsts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageConsts.swift; sourceTree = "<group>"; };
+		780D9A312BCD7B35001BCDB2 /* DraggableImageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DraggableImageModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +106,9 @@
 			children = (
 				780D9A292BCD6F48001BCDB2 /* Navigationing.swift */,
 				780D9A2B2BCD76FD001BCDB2 /* MasterGrids.swift */,
+				780D9A2F2BCD7A2C001BCDB2 /* ImageConsts.swift */,
+				780D9A2D2BCD7994001BCDB2 /* ImageDrag.swift */,
+				780D9A312BCD7B35001BCDB2 /* DraggableImageModel.swift */,
 			);
 			path = AdvancedSwiftUI;
 			sourceTree = "<group>";
@@ -180,7 +189,10 @@
 				780D9A2C2BCD76FD001BCDB2 /* MasterGrids.swift in Sources */,
 				780D99DD2BCCABAE001BCDB2 /* ListExercise.swift in Sources */,
 				780D9A2A2BCD6F48001BCDB2 /* Navigationing.swift in Sources */,
+				780D9A302BCD7A2C001BCDB2 /* ImageConsts.swift in Sources */,
 				780D99DB2BCC8C00001BCDB2 /* MasteringNavigation.swift in Sources */,
+				780D9A2E2BCD7994001BCDB2 /* ImageDrag.swift in Sources */,
+				780D9A322BCD7B35001BCDB2 /* DraggableImageModel.swift in Sources */,
 				780D99DF2BCCACE2001BCDB2 /* GradientAnimation.swift in Sources */,
 				780D99C92BCC830D001BCDB2 /* MasteringSwiftUIApp.swift in Sources */,
 			);
