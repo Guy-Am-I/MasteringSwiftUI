@@ -9,42 +9,19 @@ import SwiftUI
 
 struct ContentView: View {
     
-    let colorList1: [Color] = [.yellow, .red, .white, .orange, .black]
-    var colorList2: [Color] {
-        colorList1.reversed()
-    }
-    
-    @State private var screenTapped = false
-    
-    let rotationAngle = 360.0
-    
     var body: some View {
         NavigationStack {
-            ZStack {
-                LinearGradient(colors: screenTapped ? colorList1 : colorList2, startPoint: .bottomLeading, endPoint: .topTrailing)
-                    .ignoresSafeArea()
-                VStack {
-                    Spacer()
-                    Text("MasteringSwiftUI")
-                        .font(.largeTitle)
-                        .fontWeight(.semibold)
-                        .foregroundStyle(Color.red)
-                    Spacer()
-                    Text("MasteringSwiftUI")
-                        .font(.largeTitle)
-                        .fontWeight(.semibold)
-                        .foregroundStyle(Color.green)
-                    Spacer()
-                    Text("MasteringSwiftUI")
-                        .font(.largeTitle)
-                        .fontWeight(.semibold)
-                        .foregroundStyle(Color.blue)
-                    Spacer()
+            VStack {
+                TabView {
+                    GradientAnimation()
+                        .tabItem {
+                            Label("Gradient", systemImage: "pencil.tip.crop.circle.fill")
+                        }
+                    ListExercise()
+                        .tabItem {
+                            Label("Lists", systemImage: "list.clipboard")
+                        }
                 }
-                .rotation3DEffect(
-                    .degrees(screenTapped ? 0 : rotationAngle),
-                    axis: (x: 0.0, y: 1.0, z: 0.0)
-                )
             }
             .toolbar {
                 ToolbarItem(placement: .topBarLeading) {
@@ -64,11 +41,6 @@ struct ContentView: View {
                 }
             }
             .navigationBarTitleDisplayMode(.inline)
-            .onTapGesture {
-                withAnimation {
-                    screenTapped.toggle()
-                }
-            }
         }
     }
 }
