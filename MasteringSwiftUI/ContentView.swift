@@ -17,7 +17,7 @@ struct ContentView: View {
                         .tabItem {
                             Label("Gradient", systemImage: "pencil.tip.crop.circle.fill")
                         }
-                    ListExercise()
+                    ListExercise(a: 5, d: 5, n: 100)
                         .tabItem {
                             Label("Lists", systemImage: "list.clipboard")
                         }
