@@ -21,6 +21,7 @@
 		780D9A2E2BCD7994001BCDB2 /* ImageDrag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780D9A2D2BCD7994001BCDB2 /* ImageDrag.swift */; };
 		780D9A302BCD7A2C001BCDB2 /* ImageConsts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780D9A2F2BCD7A2C001BCDB2 /* ImageConsts.swift */; };
 		780D9A322BCD7B35001BCDB2 /* DraggableImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780D9A312BCD7B35001BCDB2 /* DraggableImageModel.swift */; };
+		780D9A342BCD8F36001BCDB2 /* TrimCapsulke.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780D9A332BCD8F36001BCDB2 /* TrimCapsulke.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 		780D9A2D2BCD7994001BCDB2 /* ImageDrag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDrag.swift; sourceTree = "<group>"; };
 		780D9A2F2BCD7A2C001BCDB2 /* ImageConsts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageConsts.swift; sourceTree = "<group>"; };
 		780D9A312BCD7B35001BCDB2 /* DraggableImageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DraggableImageModel.swift; sourceTree = "<group>"; };
+		780D9A332BCD8F36001BCDB2 /* TrimCapsulke.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrimCapsulke.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 		780D99BC2BCC830D001BCDB2 = {
 			isa = PBXGroup;
 			children = (
+				780D9A332BCD8F36001BCDB2 /* TrimCapsulke.swift */,
 				780D99C72BCC830D001BCDB2 /* MasteringSwiftUI */,
 				780D99C62BCC830D001BCDB2 /* Products */,
 			);
@@ -193,6 +196,7 @@
 				780D99DB2BCC8C00001BCDB2 /* MasteringNavigation.swift in Sources */,
 				780D9A2E2BCD7994001BCDB2 /* ImageDrag.swift in Sources */,
 				780D9A322BCD7B35001BCDB2 /* DraggableImageModel.swift in Sources */,
+				780D9A342BCD8F36001BCDB2 /* TrimCapsulke.swift in Sources */,
 				780D99DF2BCCACE2001BCDB2 /* GradientAnimation.swift in Sources */,
 				780D99C92BCC830D001BCDB2 /* MasteringSwiftUIApp.swift in Sources */,
 			);
