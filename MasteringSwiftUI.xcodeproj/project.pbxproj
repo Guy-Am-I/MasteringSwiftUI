@@ -16,6 +16,7 @@
 		780D99DB2BCC8C00001BCDB2 /* MasteringNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780D99DA2BCC8C00001BCDB2 /* MasteringNavigation.swift */; };
 		780D99DD2BCCABAE001BCDB2 /* ListExercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780D99DC2BCCABAE001BCDB2 /* ListExercise.swift */; };
 		780D99DF2BCCACE2001BCDB2 /* GradientAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780D99DE2BCCACE2001BCDB2 /* GradientAnimation.swift */; };
+		780D9A2A2BCD6F48001BCDB2 /* Navigationing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780D9A292BCD6F48001BCDB2 /* Navigationing.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		780D99DA2BCC8C00001BCDB2 /* MasteringNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasteringNavigation.swift; sourceTree = "<group>"; };
 		780D99DC2BCCABAE001BCDB2 /* ListExercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListExercise.swift; sourceTree = "<group>"; };
 		780D99DE2BCCACE2001BCDB2 /* GradientAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientAnimation.swift; sourceTree = "<group>"; };
+		780D9A292BCD6F48001BCDB2 /* Navigationing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigationing.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,13 +63,9 @@
 		780D99C72BCC830D001BCDB2 /* MasteringSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				780D9A282BCD6F1A001BCDB2 /* AdvancedSwiftUI */,
+				780D9A272BCD6EF9001BCDB2 /* BasicSwiftUI */,
 				780D99C82BCC830D001BCDB2 /* MasteringSwiftUIApp.swift */,
-				780D99CA2BCC830D001BCDB2 /* ContentView.swift */,
-				780D99DE2BCCACE2001BCDB2 /* GradientAnimation.swift */,
-				780D99DC2BCCABAE001BCDB2 /* ListExercise.swift */,
-				780D99DA2BCC8C00001BCDB2 /* MasteringNavigation.swift */,
-				780D99D82BCC8A27001BCDB2 /* MasteringGrids.swift */,
-				780D99D62BCC8874001BCDB2 /* FontAnimation.swift */,
 				780D99CC2BCC830F001BCDB2 /* Assets.xcassets */,
 				780D99CE2BCC830F001BCDB2 /* Preview Content */,
 			);
@@ -80,6 +78,27 @@
 				780D99CF2BCC830F001BCDB2 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		780D9A272BCD6EF9001BCDB2 /* BasicSwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				780D99CA2BCC830D001BCDB2 /* ContentView.swift */,
+				780D99DE2BCCACE2001BCDB2 /* GradientAnimation.swift */,
+				780D99DC2BCCABAE001BCDB2 /* ListExercise.swift */,
+				780D99DA2BCC8C00001BCDB2 /* MasteringNavigation.swift */,
+				780D99D82BCC8A27001BCDB2 /* MasteringGrids.swift */,
+				780D99D62BCC8874001BCDB2 /* FontAnimation.swift */,
+			);
+			path = BasicSwiftUI;
+			sourceTree = "<group>";
+		};
+		780D9A282BCD6F1A001BCDB2 /* AdvancedSwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				780D9A292BCD6F48001BCDB2 /* Navigationing.swift */,
+			);
+			path = AdvancedSwiftUI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -156,6 +175,7 @@
 				780D99CB2BCC830D001BCDB2 /* ContentView.swift in Sources */,
 				780D99D92BCC8A27001BCDB2 /* MasteringGrids.swift in Sources */,
 				780D99DD2BCCABAE001BCDB2 /* ListExercise.swift in Sources */,
+				780D9A2A2BCD6F48001BCDB2 /* Navigationing.swift in Sources */,
 				780D99DB2BCC8C00001BCDB2 /* MasteringNavigation.swift in Sources */,
 				780D99DF2BCCACE2001BCDB2 /* GradientAnimation.swift in Sources */,
 				780D99C92BCC830D001BCDB2 /* MasteringSwiftUIApp.swift in Sources */,
