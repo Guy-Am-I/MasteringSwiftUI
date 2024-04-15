@@ -17,6 +17,7 @@
 		780D99DD2BCCABAE001BCDB2 /* ListExercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780D99DC2BCCABAE001BCDB2 /* ListExercise.swift */; };
 		780D99DF2BCCACE2001BCDB2 /* GradientAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780D99DE2BCCACE2001BCDB2 /* GradientAnimation.swift */; };
 		780D9A2A2BCD6F48001BCDB2 /* Navigationing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780D9A292BCD6F48001BCDB2 /* Navigationing.swift */; };
+		780D9A2C2BCD76FD001BCDB2 /* MasterGrids.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780D9A2B2BCD76FD001BCDB2 /* MasterGrids.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		780D99DC2BCCABAE001BCDB2 /* ListExercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListExercise.swift; sourceTree = "<group>"; };
 		780D99DE2BCCACE2001BCDB2 /* GradientAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientAnimation.swift; sourceTree = "<group>"; };
 		780D9A292BCD6F48001BCDB2 /* Navigationing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigationing.swift; sourceTree = "<group>"; };
+		780D9A2B2BCD76FD001BCDB2 /* MasterGrids.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterGrids.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				780D9A292BCD6F48001BCDB2 /* Navigationing.swift */,
+				780D9A2B2BCD76FD001BCDB2 /* MasterGrids.swift */,
 			);
 			path = AdvancedSwiftUI;
 			sourceTree = "<group>";
@@ -174,6 +177,7 @@
 				780D99D72BCC8874001BCDB2 /* FontAnimation.swift in Sources */,
 				780D99CB2BCC830D001BCDB2 /* ContentView.swift in Sources */,
 				780D99D92BCC8A27001BCDB2 /* MasteringGrids.swift in Sources */,
+				780D9A2C2BCD76FD001BCDB2 /* MasterGrids.swift in Sources */,
 				780D99DD2BCCABAE001BCDB2 /* ListExercise.swift in Sources */,
 				780D9A2A2BCD6F48001BCDB2 /* Navigationing.swift in Sources */,
 				780D99DB2BCC8C00001BCDB2 /* MasteringNavigation.swift in Sources */,
